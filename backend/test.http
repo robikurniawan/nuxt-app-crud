@@ -1,0 +1,32 @@
+GET http://localhost:8001/api/v1/posts
+
+###
+
+GET http://localhost:8001/api/v1/posts/2
+
+
+###
+
+POST http://localhost:8001/api/v1/posts/ HTTP/1.1
+content-type: application/json
+
+{
+    "title": "sample",
+    "content": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+
+###
+
+PUT  http://localhost:8001/api/v1/posts/1 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Hello world",
+    "content": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem ut possimus, voluptas distinctio autem ipsam dolor, nostrum nulla iusto laboriosam dicta reprehenderit consectetur in odit corporis similique quibusdam. Aliquam, quibusdam."
+}
+
+
+###
+
+DELETE http://localhost:8001/api/v1/posts/2 HTTP/1.1
